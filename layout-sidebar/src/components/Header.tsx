@@ -21,7 +21,7 @@ const Header = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   }, []);
 
   return (
-    <header className="flex items-center justify-between px-6 py-4 bg-gray-900 text-white shadow-lg">
+    <header className="flex items-center justify-between px-6 py-3 bg-gray-900 text-white shadow-lg">
       {/* Left Side - Logo & Toggle Button */}
       <div className="flex items-center gap-4">
         <button onClick={toggleSidebar} className="text-white p-2 hover:bg-gray-700 rounded-md">

@@ -29,9 +29,9 @@ const Sidebar = ({ isSidebarOpen }: { isSidebarOpen: boolean }) => {
 
   return (
     <div
-      className={`bg-gray-900 text-white h-[calc(100vh-64px)] overflow-y-auto transition-width duration-300 ease-in-out ${
-        isSidebarOpen ? "w-64 pointer-events-auto" : "w-0 pointer-events-none overflow-hidden"
-      }`}
+      className={`bg-gray-900 text-white h-[calc(100vh-64px)] overflow-y-auto  transition-all duration-300 ease-in-out 
+      ${isSidebarOpen ? "w-64" : "w-0"} 
+      md:relative fixed left-0 z-50 md:z-auto shadow-lg md:shadow-none`}
     >
       <nav className="mt-4 pb-16">
         {/* Dashboard */}
